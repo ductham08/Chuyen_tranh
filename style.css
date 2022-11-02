@@ -47,7 +47,7 @@
 .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height 0.8s linear;
+    transition: 0.8s linear;
 }
 
 
@@ -98,7 +98,12 @@
 }
 
 .header .menu-btn:checked~.menu {
-    min-height: 350px;
+    min-height: 120vh;
+    overflow-y: auto;
+}
+
+.header .menu-btn:checked~.menu::-webkit-scrollbar {
+    display: none;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -155,11 +160,46 @@
 }
 
 
+/* Thể loại */
+
+.icon_childrent_menu {
+    transition: 0.5s;
+}
+
+.btn_click:hover .icon_childrent_menu {
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+.children_menu {
+    transition: 0.5s linear;
+    height: 0px;
+}
+
+.btn_click:hover .children_menu {
+    height: min-content;
+}
+
+.btn_click:hover .children_menu li a {
+    padding: 15px 0px 15px 50px;
+}
+
+
+/* End thể loại */
+
+
 /* 48em = 768px */
 
 @media (min-width: 48em) {
     .header li {
         float: left;
+    }
+    .header .children_menu li {
+        clear: both;
+        width: 150px;
+    }
+    .header .children_menu li a {
+        padding: 15px 0px 15px 30px;
     }
     .header .menu {
         clear: none;

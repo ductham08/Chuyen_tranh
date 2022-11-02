@@ -8,9 +8,13 @@
     <title>Trang chủ</title>
     <!-- Link -->
     <link rel="stylesheet" href="./style.css">
+    <script src="./publics/js/index.js"></script>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/c29ec90d7d.js" crossorigin="anonymous"></script>
@@ -19,9 +23,62 @@
 </head>
 
 <body>
-    <div class="container">
-        <p>Đây là trang chủ</p>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <a href="" class="logo col-2">
+                <img src="https://vieread.com/Content/Style/img/VieReadLogo.png" width="100%" alt="">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <div class="menu_desk">
+                    <li><a href="#work">Trang chủ</a></li>
+                    <li><a href="#about">Thể loại</a></li>
+                    <li class="menu_search">
+                        <div class="search">
+                            <input type="text">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li><a href="#noti"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#user"><i class="fas fa-user"></i></a></li>
+                </div>
+                <div class="menu_mobile">
+                    <li>
+                        <a href="#work"><i class="fas fa-home"></i> Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#about"><i class="fas fa-th-large"></i> Thể loại</a>
+                    </li>
+                    <li>
+                        <a href="#noti">
+                            <i class="fas fa-bell"></i> Thông báo
+                        </a>
+                        <a href="#user">
+                            <i class="fas fa-user"></i> Đăng nhập
+                        </a>
+                    </li>
+                    <li class="menu_search">
+                        <div class="search">
+                            <input type="text">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
     </div>
+    <!-- End header -->
+
+    <!-- Main -->
+    <div class="main">
+
+    </div>
+    <!-- End main -->
+
+    <!-- Footer -->
+    <!-- End footer -->
 </body>
 
 </html>

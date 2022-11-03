@@ -9,7 +9,7 @@
 .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-    /* position: fixed; */
+    position: relative;
     width: 100%;
     z-index: 3;
 }
@@ -181,7 +181,11 @@
 }
 
 .btn_click:hover .children_menu li a {
-    padding: 15px 0px 15px 50px;
+    padding: 10px 50px;
+}
+
+.header .children_menu li:hover a {
+    background-color: white;
 }
 
 
@@ -194,12 +198,18 @@
     .header li {
         float: left;
     }
-    .header .children_menu li {
-        clear: both;
+    .header .btn_click {
         width: 150px;
     }
-    .header .children_menu li a {
-        padding: 15px 0px 15px 30px;
+    .header .children_menu {
+        display: flex;
+        position: relative;
+        z-index: 999;
+        width: max-content;
+    }
+    .header .children_menu li {
+        clear: both;
+        width: max-content;
     }
     .header .menu {
         clear: none;
@@ -219,3 +229,17 @@
         width: 230px;
     }
 }
+
+
+/* End header */
+
+
+/* Main */
+
+.main {
+    top: 100px;
+    position: relative;
+}
+
+
+/* End main */

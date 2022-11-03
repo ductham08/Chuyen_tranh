@@ -240,12 +240,10 @@
     .header .menu .search input {
         width: 230px;
     }
-    /* Main */
     .main {
         position: relative;
         top: 65px;
     }
-    /* End main */
 }
 
 
@@ -323,26 +321,71 @@
 }
 
 
+/* End banner */
+
+
 /* Article */
 
 .main .article .new_comic {
     padding: 10px 0px;
 }
 
-.main .article .new_comic .title_new_comic {}
-
-.main .article .new_comic .title_new_comic h4 {
-    margin: 0;
-    padding: 0;
-}
-
-.main .article .new_comic .title_new_comic hr {
-    margin: 10px 0px;
+.main .article .new_comic .title_new_comic {
+    padding: 15px 0px;
+    text-align: center;
 }
 
 .main .article .new_comic .content_new_comic {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+    background-color: white;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic .content_item {
+    padding: 0px 10px;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic .content_item .name_comic a {
+    color: black;
+    text-decoration: none;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .vote_comic {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .vote_comic p {
+    margin: 0;
+    padding: 0;
+}
+
+.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .desc_sort {
+    font-size: 14px;
+    padding: 5px 0px;
+    height: 110px;
+    margin: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 

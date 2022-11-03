@@ -1,15 +1,28 @@
+@font-face {
+    font-family: Roboto_regular;
+    src: url(./publics/fonts/Roboto_Serif/static/RobotoSerif/RobotoSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_bold;
+    src: url(./publics/fonts/Roboto_Serif/static/RobotoSerif/RobotoSerif-Medium.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto_regular';
 }
 
 
 /* header */
 
+.header .container {
+    position: relative;
+}
+
 .header {
     background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-    position: relative;
     width: 100%;
     z-index: 3;
 }
@@ -27,11 +40,6 @@
     padding: 20px 20px;
     text-decoration: none;
     color: black;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: #f4f4f4;
 }
 
 .header .logo {
@@ -201,10 +209,14 @@
     .header .btn_click {
         width: 150px;
     }
+    .header {
+        position: absolute;
+    }
     .header .children_menu {
+        box-shadow: 0px 3.5px 5px rgba(0, 0, 0, .5);
         display: flex;
         position: relative;
-        z-index: 999;
+        z-index: 3;
         width: max-content;
     }
     .header .children_menu li {
@@ -228,6 +240,12 @@
     .header .menu .search input {
         width: 230px;
     }
+    /* Main */
+    .main {
+        position: relative;
+        top: 65px;
+    }
+    /* End main */
 }
 
 
@@ -237,8 +255,91 @@
 /* Main */
 
 .main {
-    top: 100px;
-    position: relative;
+    padding: 20px 0px;
+}
+
+
+/* Banner */
+
+.banner {
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner h4 {
+    font-family: Roboto_bold;
+}
+
+.banner p {
+    padding: 15px 0px;
+    font-size: 15px;
+}
+
+.banner .desc_banner {
+    padding-bottom: 70px;
+    height: 100%;
+    margin: auto 0px;
+}
+
+.banner .desc_banner button {
+    padding: 3px 15px;
+    margin-right: 15px;
+    font-size: 13px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 3px 5px red;
+    transition: 0.85s;
+}
+
+.banner .desc_banner button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.banner .img_banner {
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .banner .img_banner {
+        order: 1;
+    }
+    .banner .desc_banner {
+        padding: 10px;
+    }
+    .banner .desc_banner {
+        order: 2;
+    }
+    .main .new_dishes .img_new_dishes {
+        display: block;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+}
+
+
+/* Article */
+
+.main .article .new_comic {
+    padding: 10px 0px;
+}
+
+.main .article .new_comic .title_new_comic {}
+
+.main .article .new_comic .title_new_comic h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.main .article .new_comic .title_new_comic hr {
+    margin: 10px 0px;
+}
+
+.main .article .new_comic .content_new_comic {
+    display: flex;
+    justify-content: space-between;
 }
 
 

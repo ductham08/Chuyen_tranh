@@ -254,71 +254,82 @@
 
 .main {
     padding: 20px 0px;
-    background-image: url(./publics/images/bg_banner.png);
-    background-repeat: no-repeat;
 }
 
 
 /* Banner */
 
-.banner {
-    padding: 25px 0px;
+.main .banner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.banner h3 {
-    margin-bottom: 15px;
-}
 
-.banner p {
-    padding: 20px 0px;
-    font-size: 15px;
-}
+/* Top new banner */
 
-.banner .desc_banner {
-    display: block;
-    padding-bottom: 70px;
+.main .top_new .content_top_new {
+    padding: 10px 15px;
+    background-color: gainsboro;
+    border-radius: 15px;
     height: 100%;
-    align-items: center;
-    margin: auto 0;
 }
 
-.banner .desc_banner button {
-    padding: 3px 15px;
-    margin-right: 15px;
-    font-size: 15px;
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0px 1px 5px rgb(0, 0, 0);
-    transition: 0.85s;
+.main .top_new .content_top_new h4 {
+    padding: 0px 0px 15px 0px;
+    margin: 0;
 }
 
-.banner .desc_banner button a {
+.main .top_new ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main .top_new ul li {
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.main .top_new ul li a {
+    padding: 0;
+    margin: 0;
+    color: black;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.774);
 }
 
-.banner .img_banner {
-    height: 100%;
+.main .top_new ul li a p {
+    padding: 0;
+    margin: 0;
 }
 
-@media (max-width:768px) {
-    .banner .img_banner {
-        order: 1;
-    }
-    .banner .desc_banner {
-        padding: 10px;
-    }
-    .banner .desc_banner {
-        order: 2;
-    }
-    .main .new_dishes .img_new_dishes {
-        display: block;
-        margin: auto;
-        padding-bottom: 35px;
-    }
+.main .top_new ul li a .top_number {
+    background-color: rgb(155, 155, 155);
+    color: white;
+    width: 15px;
+    height: 15px;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 9px;
+    border-radius: 25px;
+}
+
+.main .top_new ul li a .top_name {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.main .top_new ul li a .view_top_new {
+    font-size: 10px;
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Slide banner */
+
+.main .banner .slide .carousel .carousel-inner {
+    border-radius: 15px;
 }
 
 
@@ -326,69 +337,6 @@
 
 
 /* Article */
-
-.main .article .new_comic {
-    padding: 10px 0px;
-}
-
-.main .article .new_comic .title_new_comic {
-    padding: 15px 0px;
-    text-align: center;
-}
-
-.main .article .new_comic .content_new_comic {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    background-color: white;
-    transition: 0.5s;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic:hover {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
-    background-color: white;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic .content_item {
-    padding: 0px 10px;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic .content_item .name_comic a {
-    color: black;
-    text-decoration: none;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .vote_comic {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    text-align: center;
-    margin: 15px 0px;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .vote_comic p {
-    margin: 0;
-    padding: 0;
-}
-
-.main .article .new_comic .content_new_comic .item_new_comic .content_item .desc_comic .desc_sort {
-    font-size: 14px;
-    padding: 5px 0px;
-    height: 110px;
-    margin: 0px;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    /* số dòng hiển thị */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
 
 /* End main */

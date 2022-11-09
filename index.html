@@ -9,7 +9,6 @@
     <!-- Link -->
     <link rel="stylesheet" href="./style.css">
 
-
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -19,6 +18,8 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/c29ec90d7d.js" crossorigin="anonymous"></script>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <!-- End link -->
 </head>
@@ -74,247 +75,569 @@
         </nav>
     </div>
 
-    <div class="article">
-        <div class="banner">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="article  ">
+        <!-- Truyện thuần việt -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <h4>Truyện Thuần Việt</h4>
+                <p>
+                    <a href="#">
+                        26 
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221028021002.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Mộng Ức Quân Ly</a></b>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://2img.net/h/i281.photobucket.com/albums/kk202/phamvanquan/BannerGreen.png" class="d-block w-100" alt="...">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220822062403.jpeg" width="100%" alt=""></a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://file.vfo.vn/hinh/2014/5/anh-bia-doremon-13.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://nhanlucnhatban.com/wp-content/uploads/2020/01/the-gioi-manga-nhat.jpg" class="d-block w-100" alt="...">
+                    <div class="content_item">
+                        <b><a href="#">Lưới Tình Mafia</a></b>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221018102342.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vội Vàng Và Tàn Nhẫn</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="main container">
-            <div class="top_main">
-                <div class="the_loai col-md-9 col-12">
-                    <div class="tieu_de_the_loai pt-1 pb-1">
-                        <ul>
-                            <li><a class="active" href="#">Mới Xuất Bản</a></li>
-                            <li><a href="#">Mùa Xuân</a></li>
-                            <li><a href="#">Mùa Hạ</a></li>
-                            <li><a href="#">Mùa Thu</a></li>
-                            <li class="border-0"><a href="#">Mùa Đông</a></li>
-                        </ul>
+        <!-- List icon -->
+        <div class="list_icon container">
+            <div class="item_list_icon">
+                <div class="icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="text">Nhiệm Vụ</div>
+            </div>
+            <div class="item_list_icon">
+                <div class="icon">
+                    <i class="fas fa-stream"></i>
+                </div>
+                <div class="text">Coins</div>
+            </div>
+            <div class="item_list_icon">
+                <div class="icon">
+                    <i class="fas fa-blog"></i>
+                </div>
+                <div class="text">Blogs</div>
+            </div>
+            <div class="item_list_icon">
+                <div class="icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="text">Cài đặt</div>
+            </div>
+        </div>
+
+        <!-- Mới cập nhật -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <h4>Mới Cập Nhật</h4>
+                <p>
+                    <a href="#">
+                        12
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108065511.jpg" width="100%" alt=""></a>
                     </div>
+                    <div class="content_item">
+                        <b><a href="#">Việt Kiều Nam Nhân Náo Loạn Cửu Giới</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108025454.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Tình Yêu Của Kẻ Quyền Lực</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107110751.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Những Con Sóng Đời Chưa Tan</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="content_the_loai ">
-                        <div class="item_the_loai w-25 m-2">
-                            <div class="thumnail">
-                                <a href="#">
-                                    <img class="rounded-1" src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221104093435.jpg" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content_item pt-2">
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Nhàn Đình Vũ Nhạc
-                                </p>
-                                <b class="ten_truyen">
-                                    <a href="#">Vẫn Là Thiên Thần</a>
-                                </b>
-                                <p class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i> (12.5k)
-                                </p>
-                                <div class="list_button">
-                                    <button>
-                                        <i class="far fa-eye"></i> 15k
-                                    </button>
-                                    <button>
-                                        <i class="far fa-comment"></i> 1250
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Banner main -->
+        <div class="banner swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://2game.com/wp/wp-content/uploads/2020/02/One-Piece-Pirate-Warriors-4-Everything-We-Know.jpg" width="100%" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25999bd5-73d5-46c9-9d9f-a3164450af95/d2504iz-49c0f350-42b9-40de-93a2-ee9b1b34b63a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1OTk5YmQ1LTczZDUtNDZjOS05ZDlmLWEzMTY0NDUwYWY5NVwvZDI1MDRpei00OWMwZjM1MC00MmI5LTQwZGUtOTNhMi1lZTliMWIzNGI2M2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CjOIkOPacKD5LpxusSb2GRLu3HHGJrfCBXrlHozYbPo"
+                        width="100%" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://oppw4-20-en.bn-ent.net/ogp.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
 
-                        <div class="item_the_loai w-25 m-2">
-                            <div class="thumnail">
-                                <a href="#">
-                                    <img class="rounded-1" src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107090845.jpg" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content_item pt-2">
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Nhàn Đình Vũ Nhạc
-                                </p>
-                                <b class="ten_truyen">
-                                    <a href="#">Anh Chàng Ma Cà Rồng Của Tôi</a>
-                                </b>
-                                <p class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i> (12.5k)
-                                </p>
-                                <div class="list_button">
-                                    <button>
-                                        <i class="far fa-eye"></i> 15k
-                                    </button>
-                                    <button>
-                                        <i class="far fa-comment"></i> 1250
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Truyện dự thi -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <div class="mb-2">
+                    <h4 class="mb-0">Truyện Dự Thi</h4>
+                    <i class="m-0 p-0">Viết ngắn - Tuổi thơ</i>
+                </div>
+                <p>
+                    <a href="#">
+                        26 
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
 
-                        <div class="item_the_loai w-25 m-2">
-                            <div class="thumnail">
-                                <a href="#">
-                                    <img class="rounded-1" src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107110751.jpg" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content_item pt-2">
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Nhàn Đình Vũ Nhạc
-                                </p>
-                                <b class="ten_truyen">
-                                    <a href="#">Những Con Sóng Đời Chưa Tan</a>
-                                </b>
-                                <p class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i> (12.5k)
-                                </p>
-                                <div class="list_button">
-                                    <button>
-                                        <i class="far fa-eye"></i> 15k
-                                    </button>
-                                    <button>
-                                        <i class="far fa-comment"></i> 1250
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221028021002.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Mộng Ức Quân Ly</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220822062403.jpeg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lưới Tình Mafia</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221018102342.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vội Vàng Và Tàn Nhẫn</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <div class="item_the_loai w-25 m-2">
-                            <div class="thumnail">
-                                <a href="#">
-                                    <img class="rounded-1" src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108025454.jpg" width="100%" alt="">
-                                </a>
+        <!-- Trả phí mới -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <h4>Trả Phí Mới</h4>
+                <p>
+                    <a href="#">
+                        12
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108065511.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Việt Kiều Nam Nhân Náo Loạn Cửu Giới</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108025454.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Tình Yêu Của Kẻ Quyền Lực</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107110751.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Những Con Sóng Đời Chưa Tan</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nổi bật -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <h4>Nổi Bật</h4>
+                <p>
+                    <a href="#">
+                        12
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="top_truyen_noi_bat">
+                <div class="item_truyen ">
+                    <div class="thumnail col-4">
+                        <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103103336.jpg" width="100%" alt="">
+                        <button><a href="#">Đọc truyện</a></button>
+                    </div>
+                    <div class="content">
+                        <div class="col-7">
+                            <b><a href="#"> Tháng chín có nắng hanh vàng </a></b>
+                            <p class="tac_gia">
+                                <i class="fas fa-pen-nib"></i> Vũ Hải Yến
+                            </p>
+                            <div class="vote">
+                                <p class="view">
+                                    <i class="far fa-eye"></i> 12k
+                                </p>
+                                <p class="view">
+                                    <i class="fas fa-shopping-cart"></i> 2k
+                                </p>
                             </div>
-                            <div class="content_item pt-2">
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Nhàn Đình Vũ Nhạc
+                            <i class="gia_ban">25.000 đ</i>
+                            <div class="mo_ta">
+                                <p>
+                                    Nắng thu tháng Chín Phủ màu vàng hanh Thấy em giữa nắng Dáng người mong manh [...] “Bạn làm thơ hay nhưng buồn quá. Không lẽ lấy cảm hứng từ đời thực đưa vào hả? Vậy là lớp phó đang đơn phương ai rồi phải không?” Khang không trả lời. Cậu chọn cách bỏ
+                                    qua câu hỏi trên và chỉ đáp lại Ánh bằng một nụ cười vừa đủ. Đó không phải là một nụ cười rạng rỡ của sự vui mừng, cũng không phải là một nụ cười gượng gạo tỏ ý phiền hà. Nếu phải dùng ngôn từ để diễn tả, Ánh nghĩ nụ
+                                    cười đó chứa đựng một chút chịu đựng, một chút tự nguyện và vài chút kìm nén trong đáy lòng. Chỉ trong một vài giây thoáng qua rất nhanh, Ánh đột nhiên cảm thấy lòng mình man mác buồn.
                                 </p>
-                                <b class="ten_truyen">
-                                    <a href="#">Tình Yêu Của Kẻ Quyền Lực</a>
-                                </b>
-                                <p class="star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i> (12.5k)
-                                </p>
-                                <div class="list_button">
-                                    <button>
-                                        <i class="far fa-eye"></i> 15k
-                                    </button>
-                                    <button>
-                                        <i class="far fa-comment"></i> 1250
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="top_de_cu col-md-3 col-0">
-                    <div class="tieu_de_top_de_cu pt-1 pb-1">
-                        <ul>
-                            <li><a href="#" class="active">Đề cử</a></li>
-                            <li><a href="#">Đang đọc</a></li>
-                        </ul>
+                <div class="item_truyen ">
+                    <div class="thumnail col-4">
+                        <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103103336.jpg" width="100%" alt="">
+                        <button><a href="#">Đọc truyện</a></button>
                     </div>
-                    <div class="content_top_de_cu">
-                        <div class="item_top_de_cu">
-                            <div class="thumnail col-md-3">
-                                <a href="#">
-                                    <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220824033829.jpg" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content col-md-9">
-                                <b class="ten_truyen">
-                                    <a href="#">Trong Lòng Anh</a>
-                                </b>
-                                <p class="the_loai">
-                                    <i class="far fa-bookmark"></i>Ngôn tình
+                    <div class="content">
+                        <div class="col-7">
+                            <b><a href="#"> Tháng chín có nắng hanh vàng </a></b>
+                            <p class="tac_gia">
+                                <i class="fas fa-pen-nib"></i> Vũ Hải Yến
+                            </p>
+                            <div class="vote">
+                                <p class="view">
+                                    <i class="far fa-eye"></i> 12k
                                 </p>
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Nhàn Đình Vũ Nhạc
+                                <p class="view">
+                                    <i class="fas fa-shopping-cart"></i> 2k
+                                </p>
+                            </div>
+                            <i class="gia_ban">25.000 đ</i>
+                            <div class="mo_ta">
+                                <p>
+                                    Nắng thu tháng Chín Phủ màu vàng hanh Thấy em giữa nắng Dáng người mong manh [...] “Bạn làm thơ hay nhưng buồn quá. Không lẽ lấy cảm hứng từ đời thực đưa vào hả? Vậy là lớp phó đang đơn phương ai rồi phải không?” Khang không trả lời. Cậu chọn cách bỏ
+                                    qua câu hỏi trên và chỉ đáp lại Ánh bằng một nụ cười vừa đủ. Đó không phải là một nụ cười rạng rỡ của sự vui mừng, cũng không phải là một nụ cười gượng gạo tỏ ý phiền hà. Nếu phải dùng ngôn từ để diễn tả, Ánh nghĩ nụ
+                                    cười đó chứa đựng một chút chịu đựng, một chút tự nguyện và vài chút kìm nén trong đáy lòng. Chỉ trong một vài giây thoáng qua rất nhanh, Ánh đột nhiên cảm thấy lòng mình man mác buồn.
                                 </p>
                             </div>
                         </div>
-                        <hr>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="item_top_de_cu">
-                            <div class="thumnail col-md-3">
-                                <a href="#">
-                                    <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220402081025.jpeg" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content col-md-9">
-                                <b class="ten_truyen">
-                                    <a href="#">Vì Em Nguyện Trở Thành Quỷ Dữ</a>
-                                </b>
-                                <p class="the_loai">
-                                    <i class="far fa-bookmark"></i>Ngôn tình
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Thiên Ý
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108065511.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Việt Kiều Nam Nhân Náo Loạn Cửu Giới</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108025454.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Tình Yêu Của Kẻ Quyền Lực</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107110751.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Những Con Sóng Đời Chưa Tan</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <div class="item_top_de_cu">
-                            <div class="thumnail col-md-3">
-                                <a href="#">
-                                    <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220731032423.png" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="content col-md-9">
-                                <b class="ten_truyen">
-                                    <a href="#">Hoa Tigon Nở Muộn</a>
-                                </b>
-                                <p class="the_loai">
-                                    <i class="far fa-bookmark"></i>Ngôn tình
+        <!-- Bán chạy -->
+        <div class="truyen_thuan_viet container">
+            <div class="title_truyen_thuan_viet">
+                <h4>Bán Chạy</h4>
+                <p>
+                    <a href="#">
+                        12
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="top_truyen_noi_bat">
+                <div class="item_truyen ">
+                    <div class="thumnail col-4">
+                        <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103103336.jpg" width="100%" alt="">
+                        <button><a href="#">Đọc truyện</a></button>
+                    </div>
+                    <div class="content">
+                        <div class="col-7">
+                            <b><a href="#"> Tháng chín có nắng hanh vàng </a></b>
+                            <p class="tac_gia">
+                                <i class="fas fa-pen-nib"></i> Vũ Hải Yến
+                            </p>
+                            <div class="vote">
+                                <p class="view">
+                                    <i class="far fa-eye"></i> 12k
                                 </p>
-                                <p class="tac_gia">
-                                    <i class="fas fa-pen-nib"></i> Hoài Thư
+                                <p class="view">
+                                    <i class="fas fa-shopping-cart"></i> 2k
+                                </p>
+                            </div>
+                            <i class="gia_ban">25.000 đ</i>
+                            <div class="mo_ta">
+                                <p>
+                                    Nắng thu tháng Chín Phủ màu vàng hanh Thấy em giữa nắng Dáng người mong manh [...] “Bạn làm thơ hay nhưng buồn quá. Không lẽ lấy cảm hứng từ đời thực đưa vào hả? Vậy là lớp phó đang đơn phương ai rồi phải không?” Khang không trả lời. Cậu chọn cách bỏ
+                                    qua câu hỏi trên và chỉ đáp lại Ánh bằng một nụ cười vừa đủ. Đó không phải là một nụ cười rạng rỡ của sự vui mừng, cũng không phải là một nụ cười gượng gạo tỏ ý phiền hà. Nếu phải dùng ngôn từ để diễn tả, Ánh nghĩ nụ
+                                    cười đó chứa đựng một chút chịu đựng, một chút tự nguyện và vài chút kìm nén trong đáy lòng. Chỉ trong một vài giây thoáng qua rất nhanh, Ánh đột nhiên cảm thấy lòng mình man mác buồn.
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="item_truyen ">
+                    <div class="thumnail col-4">
+                        <img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103103336.jpg" width="100%" alt="">
+                        <button><a href="#">Đọc truyện</a></button>
+                    </div>
+                    <div class="content">
+                        <div class="col-7">
+                            <b><a href="#"> Tháng chín có nắng hanh vàng </a></b>
+                            <p class="tac_gia">
+                                <i class="fas fa-pen-nib"></i> Vũ Hải Yến
+                            </p>
+                            <div class="vote">
+                                <p class="view">
+                                    <i class="far fa-eye"></i> 12k
+                                </p>
+                                <p class="view">
+                                    <i class="fas fa-shopping-cart"></i> 2k
+                                </p>
+                            </div>
+                            <i class="gia_ban">25.000 đ</i>
+                            <div class="mo_ta">
+                                <p>
+                                    Nắng thu tháng Chín Phủ màu vàng hanh Thấy em giữa nắng Dáng người mong manh [...] “Bạn làm thơ hay nhưng buồn quá. Không lẽ lấy cảm hứng từ đời thực đưa vào hả? Vậy là lớp phó đang đơn phương ai rồi phải không?” Khang không trả lời. Cậu chọn cách bỏ
+                                    qua câu hỏi trên và chỉ đáp lại Ánh bằng một nụ cười vừa đủ. Đó không phải là một nụ cười rạng rỡ của sự vui mừng, cũng không phải là một nụ cười gượng gạo tỏ ý phiền hà. Nếu phải dùng ngôn từ để diễn tả, Ánh nghĩ nụ
+                                    cười đó chứa đựng một chút chịu đựng, một chút tự nguyện và vài chút kìm nén trong đáy lòng. Chỉ trong một vài giây thoáng qua rất nhanh, Ánh đột nhiên cảm thấy lòng mình man mác buồn.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108065511.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Việt Kiều Nam Nhân Náo Loạn Cửu Giới</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108025454.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Tình Yêu Của Kẻ Quyền Lực</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="	https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221107110751.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Những Con Sóng Đời Chưa Tan</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221029075343.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Lời Thứ Tội Ngọt Ngào</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20220913014826.png" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <hr>
 
     <div class="footer">
         <footer>
@@ -382,13 +705,25 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Buy me a coffe script
-        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vbattalshn" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18"
-            data-y_margin="18"></script> -->
     </div>
 
+
+
+    <!-- Css -->
     <script src="./publics/js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

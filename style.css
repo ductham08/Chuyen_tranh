@@ -41,228 +41,195 @@
 
 /* Article */
 
+
+/* .article .banner {
+    height: 450px;
+} */
+
 .article {
     padding: 25px 0px;
 }
 
-.article .main .top_main {
+.article .truyen_thuan_viet .title_truyen_thuan_viet {
     display: flex;
     justify-content: space-between;
 }
 
-.article .the_loai .tieu_de_the_loai ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+.article .truyen_thuan_viet .title_truyen_thuan_viet h4 {
+    font-weight: 700;
 }
 
-.article .the_loai .tieu_de_the_loai ul li {
-    list-style: none;
-    padding: 0px 15px;
-    margin: 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
+.article .truyen_thuan_viet .title_truyen_thuan_viet p {
+    background-color: #4400ff;
+    text-align: center;
+    border-radius: 3px;
+    height: 25px;
+    clip-path: polygon(0% 0%, 82% 0, 100% 50%, 82% 100%, 0% 100%);
 }
 
-.article .the_loai .tieu_de_the_loai ul li a {
+.article .truyen_thuan_viet .title_truyen_thuan_viet p a {
+    color: white;
     text-decoration: none;
-    color: black;
-    font-size: 15px;
-}
-
-.article .the_loai .tieu_de_the_loai .active {
-    font-weight: 650;
-    color: rgb(255, 136, 0);
-    border-bottom: 1.5px solid rgb(252, 153, 39);
-}
-
-.article .the_loai .content_the_loai {
-    display: flex;
-    justify-content: space-between;
-}
-
-.article .the_loai .content_the_loai .thumnail {
-    overflow: hidden;
-    border-radius: 5px;
-    height: 230px;
-}
-
-.article .the_loai .content_the_loai .thumnail img {
-    transition: 0.3s;
-}
-
-.article .the_loai .content_the_loai .thumnail a:hover img {
-    transform: scale(1.12);
-}
-
-.article .the_loai .content_the_loai .content_item .tac_gia {
-    font-size: 12px;
-    padding: 0;
+    padding: 7px 15px 7px 5px;
     margin: 0;
-    color: gray;
-}
-
-.article .the_loai .content_the_loai .content_item .ten_truyen {
-    display: -webkit-box;
-    line-height: 1.3;
-    -webkit-line-clamp: 1;
-    /* số dòng hiển thị */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.article .the_loai .content_the_loai .content_item .ten_truyen a {
-    text-decoration: none;
-    margin: 0;
-    padding: 7px 0px 0px 0px;
-    color: black;
-    transition: 0.5s;
-}
-
-.article .the_loai .content_the_loai .content_item .star {
-    font-size: 12px;
-    display: flex;
-    justify-content: flex-start;
-    color: rgb(255, 136, 0);
-    align-items: center;
-    padding: 0;
-}
-
-.article .the_loai .content_the_loai .content_item .star i {
-    font-size: 10px;
-    padding-right: 2px;
-}
-
-.article .the_loai .content_the_loai .content_item .list_button {
-    display: flex;
-    justify-content: space-between;
-    padding: 3px 0px 0px 0px;
-}
-
-.article .the_loai .content_the_loai .content_item .list_button button {
-    width: 49%;
-    border-radius: 5px;
-    border: 0;
-    background-color: rgb(240, 240, 240);
-    padding: 3px 10px;
-    font-size: 14px;
-    color: gray;
-}
-
-.article .the_loai .content_the_loai .content_item .list_button button i {
-    color: black;
-}
-
-
-/* Top đề cử */
-
-.article .top_de_cu {
-    background-color: rgba(0, 0, 0, 0.048);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-.article .top_de_cu hr {
-    padding: 0;
-    margin: 5px 0px;
-}
-
-.article .top_de_cu .tieu_de_top_de_cu ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.article .top_de_cu .tieu_de_top_de_cu ul li {
-    padding: 0px 15px 0px 0px;
-    margin: 0;
-    list-style: none;
-    width: 50%;
     text-align: center;
 }
 
-.article .top_de_cu .tieu_de_top_de_cu ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.article .top_de_cu .tieu_de_top_de_cu ul .active {
-    font-weight: 600;
-    color: rgb(255, 136, 0);
-    border-bottom: 1.5px solid rgb(252, 153, 39);
-}
-
-.article .top_de_cu .content_top_de_cu .item_top_de_cu {
+.article .truyen_thuan_viet .content_truyen_thuan_viet {
     display: flex;
     justify-content: flex-start;
-    padding: 10px 0px 0px 0px;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.164);
+    padding: 20px 0px;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .thumnail {
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet {
+    padding: 5px 10px;
+}
+
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet .thumnail_item {
+    border-radius: 5px;
+}
+
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet .thumnail_item img {
     border-radius: 5px;
     overflow: hidden;
-    height: 95px;
-}
-
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .thumnail img {
-    border-radius: 5px;
     transition: 0.3s;
+    height: 220px;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .thumnail a:hover img {
-    transform: scale(1.15);
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet .thumnail_item:hover img {
+    transform: scale(1.07);
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content {
-    padding-left: 10px;
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet .content_item {
+    padding: 15px 0px;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content .ten_truyen a {
-    display: -webkit-box;
-    line-height: 1.3;
-    -webkit-line-clamp: 1;
-    /* số dòng hiển thị */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content .ten_truyen a {
+.article .truyen_thuan_viet .content_truyen_thuan_viet .item_truyen_thuan_viet .content_item b a {
     text-decoration: none;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
     color: black;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content .tac_gia {
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    color: gray;
+.article .list_icon {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content .the_loai {
-    font-size: 13px;
-    color: gray;
-    padding: 0;
-    margin: 5px 0px;
+.article .list_icon .item_list_icon {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 25px;
+    align-items: center;
+}
+
+.article .list_icon .item_list_icon .icon i {
+    text-align: center;
+    font-size: 18px;
+    margin: auto 10px auto 10px;
+    padding: 10px;
+    border: 0.5px solid gainsboro;
+    border-radius: 3px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat {
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin-bottom: 25px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen {
+    position: relative;
+    width: 48%;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content {
+    height: 220px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right bottom, #e7949c, #f2a18b, #f0b47f, #e2c97c, #cadf8a);
+    position: absolute;
+    top: 25%;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 10px 5px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta {
+    padding-top: 15px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta p {
     display: -webkit-box;
+    height: 16px*1.3*3;
+    font-size: 16px;
     line-height: 1.3;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 3;
     /* số dòng hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.article .top_de_cu .content_top_de_cu .item_top_de_cu .content .the_loai i {
-    padding-right: 5px;
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 2;
+    text-align: center;
 }
 
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail img {
+    border-radius: 7px;
+}
 
-/* End top đề cử */
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail button {
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 3px 15px;
+    border-radius: 55px;
+    border: 0;
+    background-color: white;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail button a {
+    color: rgb(255, 129, 129);
+    text-decoration: none;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content b a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .tac_gia {
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .vote {
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .vote p {
+    padding-right: 15px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .gia_ban {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin: 10px 0px!important;
+}
 
 
 /* End article */
@@ -371,3 +338,39 @@ p.site-decription {
 
 
 /* End footer */
+
+
+/* Swipper */
+
+.banner {
+    margin: 25px 0px
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 450px !important;
+}
+
+
+/* End swipper */

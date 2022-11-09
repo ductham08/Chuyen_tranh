@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Document</title>
     <!-- Link -->
     <link rel="stylesheet" href="./style.css">
-    <script src="./publics/js/index.js"></script>
+
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -24,505 +24,133 @@
 </head>
 
 <body>
-    <!-- Header -->
     <div class="header">
-        <div class="container">
-            <a href="" class="logo col-2">
-                <img src="https://vieread.com/Content/Style/img/VieReadLogo.png" width="100%" alt="">
-            </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <div class="menu_desk">
-                    <li><a href="#work">Trang chủ</a></li>
-                    <li class="btn_click">
-                        <a href="#about">
-                            Thể loại
-                            <i style="margin-left: 15px;" class="fas fa-angle-down icon_childrent_menu"></i>
-                        </a>
-                        <ul class="children_menu">
-                            <div class="col-6">
-                                <li><a href="#">Chinh thám</a></li>
-                                <li><a href="#">Ngôn tình</a></li>
-                                <li><a href="#">Kiếm hiệp</a></li>
-                                <li><a href="#">Kinh dị</a></li>
-                                <li><a href="#">Đô thị</a></li>
-                                <li><a href="#">Hệ thống</a></li>
-                                <li><a href="#">Xuyên không</a></li>
-                                <li><a href="#">Quân sự</a></li>
-                                <li><a href="#">Cổ trang</a></li>
-                            </div>
-                            <div class="col-6">
-                                <li><a href="#">Chinh thám</a></li>
-                                <li><a href="#">Ngôn tình</a></li>
-                                <li><a href="#">Kiếm hiệp</a></li>
-                                <li><a href="#">Kinh dị</a></li>
-                                <li><a href="#">Đô thị</a></li>
-                                <li><a href="#">Hệ thống</a></li>
-                                <li><a href="#">Xuyên không</a></li>
-                                <li><a href="#">Quân sự</a></li>
-                                <li><a href="#">Cổ trang</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="menu_search">
-                        <div class="search">
-                            <input type="text">
-                            <button><i class="fas fa-search"></i></button>
-                        </div>
-                    </li>
-                    <li><a href="#noti"><i class="fas fa-bell"></i></a></li>
-                    <li><a href="#user"><i class="fas fa-user"></i></a></li>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div style="margin-right: 25px;" class="col-md-1 col-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://vieread.com/Content/Style/img/VieReadLogo.png" width="100%" alt="">
+                    </a>
                 </div>
-                <div class="menu_mobile">
-                    <li>
-                        <a href="#work"><i class="fas fa-home"></i> Trang chủ</a>
-                    </li>
-                    <li class="btn_click">
-                        <a href="#about">
-                            <i class="fas fa-th-large"></i> Thể loại
-                            <i style="margin-left: 15px;" class="fas fa-angle-down icon_childrent_menu"></i>
-                        </a>
-                        <ul class="children_menu">
-                            <li><a href="#">Chinh thám</a></li>
-                            <li><a href="#">Ngôn tình</a></li>
-                            <li><a href="#">Kiếm hiệp</a></li>
-                            <li><a href="#">Kinh dị</a></li>
-                            <li><a href="#">Đô thị</a></li>
-                            <li><a href="#">Hệ thống</a></li>
-                            <li><a href="#">Xuyên không</a></li>
-                            <li><a href="#">Quân sự</a></li>
-                            <li><a href="#">Cổ trang</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#noti">
-                            <i class="fas fa-bell"></i> Thông báo
-                        </a>
-                        <a href="#user">
-                            <i class="fas fa-user"></i> Đăng nhập
-                        </a>
-                    </li>
-                    <li class="menu_search">
-                        <div class="search">
-                            <input type="text">
-                            <button><i class="fas fa-search"></i></button>
-                        </div>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </div>
-    <!-- End header -->
-
-    <!-- Main -->
-    <div class="main">
-        <!-- Banner -->
-        <div class="banner container">
-            <div class="top_new col-md-3 col-12">
-                <div class="content_top_new col-md-11 col-12">
-                    <h4>Top Truyện Mới</h4>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b style="background: #bf2c24;" class="top_number">1</b>
-                                    <b class="top_name">Tái Sinh</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Trang Chủ
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b style="background: #e67225;" class="top_number">2</b>
-                                    <b class="top_name">Đông Ly Trần Kiếp Diệt</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thể loại
+                                <i class="fas fa-angle-down"></i>
                             </a>
+                            <ul class="dropdown-menu  border-0">
+                                <li><a class="dropdown-item" href="#">Trinh thám</a></li>
+                                <li><a class="dropdown-item" href="#">Ngôn tình</a></li>
+                                <li><a class="dropdown-item" href="#">Kinh dị</a></li>
+                                <li><a class="dropdown-item" href="#">Thành phố</a></li>
+                                <li><a class="dropdown-item" href="#">Kiếm hiệp</a></li>
+                                <li><a class="dropdown-item" href="#">Tiên hiệp</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ thống</a></li>
+                                <li><a class="dropdown-item" href="#">Xuyên không</a></li>
+                                <li><a class="dropdown-item" href="#">Quân sự</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b style="background: #e6bf25" class="top_number">3</b>
-                                    <b class="top_name">Sinh Tồn Trong Tận Thế</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b class="top_number">4</b>
-                                    <b class="top_name">Thương Sinh Giang Đạo</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b class="top_number">5</b>
-                                    <b class="top_name">Toàn Chức Pháp Sư Dị Bản</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b class="top_number">6</b>
-                                    <b class="top_name">Con Đường Vô Tận</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b class="top_number">7</b>
-                                    <b class="top_name">Văn Minh Vạn Giới</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>
-                                    <b class="top_number">8</b>
-                                    <b class="top_name">Minh Hoa Thiên Tuệ</b>
-                                </p>
-                                <p class="view_top_new">12k lượt xem</p>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Thông báo
                             </a>
                         </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control shadow-none me-3 border-bottom-1 border-end-0 border-top-0 border-start-0 bg-transparent rounded-0" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-success border-secondary text-muted " type="submit">Tìm</button>
+                    </form>
                 </div>
             </div>
-            <div class="slide col-md-9 col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://media.vietnovel.com/carousels/39840a8ca9.jpg" width="100%" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://media.vietnovel.com/carousels/bbdab53424.jpg" width="100%" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://media.vietnovel.com/carousels/008c1ece43.jpg" width="100%" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- End banner -->
+        </nav>
+    </div>
 
-        <!-- Article -->
-        <div class="article container">
-            <div class="top_main">
-                <div class="content_top_main col-md-9 col-12">
-                    <div class="title_top_main">
-                        <h4>Top Đề Cử</h4>
-                        <a href="#">Xem thêm</a>
-                    </div>
-                    <div class="list_item_top_main">
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/dong-ly-tran-kiep-diet/150.jpg?1625416425" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Đông Ly Trần Kiếp Diệt</b></a>
-                                <p class="sort_desc">
-                                    Núi La Sơn, mười năm có một đêm trăng tỏ. Biển Vô Lượng, trăm năm có một đợt thủy triều. Sương mù Thương Mang, ngàn năm có một lần lui tán Mà ta cùng ngươi, vạn năm mới có thể gặp gỡ một lần. Thiếu nữ mặc váy trắng đứng giữa tế đàn, hướng hắn nở nụ cười
-                                    yên nhiên: Gặp lại! Điểu huynh!" Khương Ly, một tên Chân Nhân cao thủ tuổi già thọ cạn, cáo lão hồi hương, bỗng nhiên tuyệt địa phùng sinh, từ đấy vang danh Tứ Hoang Nhất Hải. Võ lộ thênh thang không bờ bến, quay đầu
-                                    chợt hiện bóng hồng nhan.
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Nguyễn Văn Minh
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/thinh-the-dien-ninh/150.jpg?1663219120" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Thịnh Thế Diên Ninh</b></a>
-                                <p class="sort_desc">
-                                    Văn án: Dương Ninh xui xẻo bị Ngưu đầu Mã diện bắt nhầm. Hắn chưa tới số nhưng lại không thể trở về dương gian. Để che đậy tội lỗi, hai vị này cấu kết Phán quan để cho hắn trọng sinh lần nữa để chữa cháy. Kết quả 8 lần trọng sinh hắn đều chết bất đắc
-                                    kỳ tử đều không sống quá năm năm: làm kỹ sư nông nghiệp bị ngộ độc thực phẩm chết; làm kỹ sư quân khí nhà máy bị nổ chết; xuyên qua Lộc Đỉnh Ký làm thuộc hạ Đa Long cũng bị Vi Tiểu Bảo hố chết, thậm chí trở về làm con
-                                    của Hưng Đạo vương cũng hi sinh luôn trong kháng chiến chống Nguyên rồi...thật mẹ nó ta phải chết đến mấy lần nữa đây?
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Nguyễn Văn Minh
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/dong-mau-lac-hong/150.jpg?1637754726" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Dòng Máu Lạc Hồng</b></a>
-                                <p class="sort_desc">
-                                    “ Dòng máu lạc hồng Bốn nghìn năm Dòng máu đỏ tươi Chảy trong tim mình Nòi giống lạc hồng Giống rồng tiên……” Những âm hưởng hào hùng cứ vang lên, in đậm trong tâm chí của bất cứ ai ở đất nước Việt Nam này. Nguyễn Toản là một kẻ như vậy, mang trong mình
-                                    dòng máu Lạc Hồng, luôn tự hào về cha ông cũng như cảm thấy tiếc nuối cho những kế hoạch sự dang dở trong quá khứ.
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Thành Bôbi
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/xuyen-khong-chien-ky-thien-menh-chien/150.jpg?1667554820" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Thiên Mệnh Chiến: Quân Lâm Thiên Hạ!</b></a>
-                                <p class="sort_desc">
-                                    Truyện kể về Trần Minh Quân, một tác giả xuyên không, tham gia cuộc chiến tranh đoạt thiên mệnh hay còn được gọi Thiên Mệnh Chiến. Tại một thế giới xa lạ này hắn nhập vào thân xác của vị thái tử cuối cùng Đại Trần Hoàng Triều. Không những muốn phục quốc
-                                    mà còn phải chiến đấu với những người xuyên không khác, Khí Vận Chi Tử tại bản thổ để tranh đoạt Thiên Mệnh. Hãy cùng tìm hiểu xem hành trình từng bước trưởng thành của hắn thôi nào! Thiên thu, vạn cổ, sách ghi tên.
-                                    Triệu hoán kỳ tài, vượt giới lên. Nhiệt huyết dâng trào, Thiên Mệnh Chiến. Quần long hội tụ, mấy ai quên?
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Tiểu Longg
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/de-cuong-1/150.jpg?1663354170" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Đế Cuồng</b></a>
-                                <p class="sort_desc">
-                                    Thế gian có lời đồn rằng mỗi thời đại trước khi hủy diệt đều sẽ sản sinh ra những vị hào kiệt đội trời đạp đất, dùng sức bản thân thay đổi cả tạo hóa. Có anh hùng, có gian hùng, có kiêu hùng, càng có tà hùng và ác hùng… Có kẻ tầm đạo, có kẻ diệt đạo,
-                                    cũng có kẻ khinh đạo… Minh - một thanh niên Việt Nam từ nhỏ đã mồ côi cha mẹ, phải sống trong khu ổ chuột. Sau giấc ngủ say bằng cách thần kỳ nào đó đã xuyên không tới một thế giới kỳ lạ này.
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Tiểu Longg
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item_top col-md-6 col-12">
-                            <div class="img_item col-md-3 col-2">
-                                <a href="#">
-                                    <img src="https://static.cdnno.com/poster/di-ban-hu-tieu-tai-di-gioi/150.jpg?1662206489" width="100%" alt="">
-                                </a>
-                            </div>
-                            <div class="desc_item">
-                                <a href="#"><b>Ta Bán Hủ Tiếu Tại Dị Giới</b></a>
-                                <p class="sort_desc">
-                                    Một ông chú hơn ba mươi tuổi, như bao thằng đàn ông ngoài ba mươi khác. Hắn ta có ba không: Không nhà, không tiền, không bạn gái. Từ nhỏ sống trong một khu ổ chuột, lớn lên trong thành thành phố xa hoa không thuộc về mình. Thế giới phát triển quá mức,
-                                    khiến cho các xe bán hàng lưu động bắt buộc phải thay đổi từ xe chạy xăng dầu đổi thành xe điện. Ma Tùng Quân vét sạch của cải, bán luôn cả xe hủ tiếu theo hắn mười mấy năm để mua một con xe tải bán hàng lưu động.
-                                </p>
-                                <p class="tac_gia">
-                                    <i class="fa-solid fa-user-pen"></i></i> Gấu Tung Tăng
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav_bar_main col-md-3 col-12">
-                    <div class="top_nav_bar">
-                        <h5>Bảng Xếp Hạng Tuần</h5>
-                        <div class="list_xep_hang">
-                            <div class="item_xep_hang">
-                                <div class="img col-2">
-                                    <a href="#">
-                                        <img src="https://static.cdnno.com/poster/toan-chuc-phap-su-di-ban/150.jpg?1623558907" width="100%" alt="">
-                                    </a>
-                                </div>
-                                <div class="desc col-8">
-                                    <a href="#">
-                                        <b>Toàn Chức Pháp Sư Dị Bản</b>
-                                    </a>
-                                    <p><i class="fa-solid fa-user-pen"></i></i> Nguyễn Văn Minh</p>
-                                </div>
-                            </div>
-                            <div class="item_xep_hang">
-                                <div class="img col-2">
-                                    <a href="#">
-                                        <img src="https://static.cdnno.com/poster/di-ban-hu-tieu-tai-di-gioi/150.jpg?1662206489" width="100%" alt="">
-                                    </a>
-                                </div>
-                                <div class="desc col-8">
-                                    <a href="#">
-                                        <b>Ta Bán Hủ Tiếu Tại Dị Giới</b>
-                                    </a>
-                                    <p><i class="fa-solid fa-user-pen"></i></i> Nguyễn Văn Minh</p>
-                                </div>
-                            </div>
-                            <div class="item_xep_hang">
-                                <div class="img col-2">
-                                    <a href="#">
-                                        <img src="https://static.cdnno.com/poster/ly-trieu-ba-dao-pho-ma/150.jpg?1634546995" width="100%" alt="">
-                                    </a>
-                                </div>
-                                <div class="desc col-8">
-                                    <a href="#">
-                                        <b>Lý Triều Bá Đạo Phò Mã</b>
-                                    </a>
-                                    <p><i class="fa-solid fa-user-pen"></i></i> Nguyễn Văn Minh</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom_nav_bar">
-                        <h5>Bạn muốn viết truyện?</h5>
-                        <p>
+    <div class="article">
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="container footerContainer">
+                <div class="footer-nav flex flex-around flex-start flex-g-1">
+                    <div class="col flex flex-column flex-start flex-g-1">
+                        <span class="logo-holder col-md-8 col-7">
+                            <img src="https://vieread.com/Content/Style/img/VieReadLogo.png" width="100%" alt="">
+                        </span>
+                        <p class="site-decription">
                             Vieread là một nền tảng mở dành cho những tác giả tự do có thể thỏa sức sáng tạo mà không bị bó buộc về thời gian. Hãy tham gia cộng đồng tác giả của Vieread để cùng nhau tạo ra những tác phẩm ý nghĩa nhé!
                         </p>
-                        <button><a href="#">Viết ngay</a></button>
-                        <button><a href="#">Đọc ngay</a></button>
+                        <div class="social-medias flex flex-g-1">
+                            <a href="#" class="social-media flex">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-media flex">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-media flex">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+                            <a href="#" class="social-media flex">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
+                    <div class="col flex flex-column flex-g-1 flex-start">
+                        <h3 class="col-title">Bảo mật</h3>
+                        <nav class="col-list">
+                            <ul>
+                                <li><a href="#">Formats</a></li>
+                                <li><a href="#">Compression</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Status</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col flex flex-column flex-g-1 flex-start">
+                        <h3 class="col-title">Bản Quyền</h3>
+                        <nav class="col-list">
+                            <ul>
+                                <li><a href="#">Developer API</a></li>
+                                <li><a href="#">Tools</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col flex flex-column flex-g-1 flex-start">
+                        <h3 class="col-title">Điều khiển</h3>
+                        <nav class="col-list">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!-- There is no copyright. use as you wish -->
+                <div class="copyright">© 2022 – Liên hệ quảng cáo qua email: Vieread.com@gmail.com
                 </div>
             </div>
-            <div class="danh_gia_cao">
-                <div class="title_danh_gia">
-                    <h4>Được đánh giá cao</h4>
-                    <a href="#">Xem thêm</a>
-                </div>
-                <div class="list_danh_gia">
-                    <div class="item_danh_gia col-md-6 col-12">
-                        <div class="img_item col-md-3 col-2">
-                            <a href="#">
-                                <img src="https://static.cdnno.com/poster/do-thi-ke-tro-ve/150.jpg?1666876071" width="100%" alt="">
-                            </a>
-                        </div>
-                        <div class="desc_item col-md-9 col-10">
-                            <a href="#"><b>Đô Thị Kẻ Trở Về</b></a>
-                            <div class="start_item">
-                                <p>
-                                    <i class="fas fa-eye"></i> 125.2k
-                                </p>
-                                <p>
-                                    <i class="fas fa-book"></i> 120
-                                </p>
-                                <p>
-                                    <i class="fas fa-comment"></i> 150K
-                                </p>
-                            </div>
-                            <p class="desc_sort">
-                                Văn án: Dương Ninh xui xẻo bị Ngưu đầu Mã diện bắt nhầm. Hắn chưa tới số nhưng lại không thể trở về dương gian. Để che đậy tội lỗi, hai vị này cấu kết Phán quan để cho hắn trọng sinh lần nữa để chữa cháy. Kết quả 8 lần trọng sinh hắn đều chết bất đắc
-                                kỳ tử đều không sống quá năm năm: làm kỹ sư nông nghiệp bị ngộ độc thực phẩm chết; làm kỹ sư quân khí nhà máy bị nổ chết; xuyên qua Lộc Đỉnh Ký làm thuộc hạ Đa Long cũng bị Vi Tiểu Bảo hố chết, thậm chí trở về làm con của
-                                Hưng Đạo vương cũng hi sinh luôn trong kháng chiến chống Nguyên rồi...thật mẹ nó ta phải chết đến mấy lần nữa đây?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item_danh_gia col-md-6 col-12">
-                        <div class="img_item col-md-3 col-2">
-                            <a href="#">
-                                <img src="https://static.cdnno.com/poster/muu-ngay-ke-thang/150.jpg?1660410485" width="100%" alt="">
-                            </a>
-                        </div>
-                        <div class="desc_item col-md-9 col-10">
-                            <a href="#"><b>Thần Dữ Của Ban Duyên</b></a>
-                            <div class="start_item">
-                                <p>
-                                    <i class="fas fa-eye"></i> 125.2k
-                                </p>
-                                <p>
-                                    <i class="fas fa-book"></i> 120
-                                </p>
-                                <p>
-                                    <i class="fas fa-comment"></i> 150K
-                                </p>
-                            </div>
-                            <p class="desc_sort">
-                                Văn án: Dương Ninh xui xẻo bị Ngưu đầu Mã diện bắt nhầm. Hắn chưa tới số nhưng lại không thể trở về dương gian. Để che đậy tội lỗi, hai vị này cấu kết Phán quan để cho hắn trọng sinh lần nữa để chữa cháy. Kết quả 8 lần trọng sinh hắn đều chết bất đắc
-                                kỳ tử đều không sống quá năm năm: làm kỹ sư nông nghiệp bị ngộ độc thực phẩm chết; làm kỹ sư quân khí nhà máy bị nổ chết; xuyên qua Lộc Đỉnh Ký làm thuộc hạ Đa Long cũng bị Vi Tiểu Bảo hố chết, thậm chí trở về làm con của
-                                Hưng Đạo vương cũng hi sinh luôn trong kháng chiến chống Nguyên rồi...thật mẹ nó ta phải chết đến mấy lần nữa đây?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item_danh_gia col-md-6 col-12">
-                        <div class="img_item col-md-3 col-2">
-                            <a href="#">
-                                <img src="https://static.cdnno.com/poster/lien-minh-huyen-thoai-van-toc-chi-chien/150.jpg?1660212592" width="100%" alt="">
-                            </a>
-                        </div>
-                        <div class="desc_item col-md-9 col-10">
-                            <a href="#"><b>Liên Minh Huyền Thoại: Vạn Tộc Chi Chiến</b></a>
-                            <div class="start_item">
-                                <p>
-                                    <i class="fas fa-eye"></i> 125.2k
-                                </p>
-                                <p>
-                                    <i class="fas fa-book"></i> 120
-                                </p>
-                                <p>
-                                    <i class="fas fa-comment"></i> 150K
-                                </p>
-                            </div>
-                            <p class="desc_sort">
-                                Văn án: Dương Ninh xui xẻo bị Ngưu đầu Mã diện bắt nhầm. Hắn chưa tới số nhưng lại không thể trở về dương gian. Để che đậy tội lỗi, hai vị này cấu kết Phán quan để cho hắn trọng sinh lần nữa để chữa cháy. Kết quả 8 lần trọng sinh hắn đều chết bất đắc
-                                kỳ tử đều không sống quá năm năm: làm kỹ sư nông nghiệp bị ngộ độc thực phẩm chết; làm kỹ sư quân khí nhà máy bị nổ chết; xuyên qua Lộc Đỉnh Ký làm thuộc hạ Đa Long cũng bị Vi Tiểu Bảo hố chết, thậm chí trở về làm con của
-                                Hưng Đạo vương cũng hi sinh luôn trong kháng chiến chống Nguyên rồi...thật mẹ nó ta phải chết đến mấy lần nữa đây?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item_danh_gia col-md-6 col-12">
-                        <div class="img_item col-md-3 col-2">
-                            <a href="#">
-                                <img src="https://static.cdnno.com/poster/nguoi-gac-cong-mot-cau-hen-uoc-the/150.jpg?1662808970" width="100%" alt="">
-                            </a>
-                        </div>
-                        <div class="desc_item col-md-9 col-10">
-                            <a href="#"><b>Người Gác Cổng - Một Câu Hẹn Uớc Thề</b></a>
-                            <div class="start_item">
-                                <p>
-                                    <i class="fas fa-eye"></i> 125.2k
-                                </p>
-                                <p>
-                                    <i class="fas fa-book"></i> 120
-                                </p>
-                                <p>
-                                    <i class="fas fa-comment"></i> 150K
-                                </p>
-                            </div>
-                            <p class="desc_sort">
-                                Văn án: Dương Ninh xui xẻo bị Ngưu đầu Mã diện bắt nhầm. Hắn chưa tới số nhưng lại không thể trở về dương gian. Để che đậy tội lỗi, hai vị này cấu kết Phán quan để cho hắn trọng sinh lần nữa để chữa cháy. Kết quả 8 lần trọng sinh hắn đều chết bất đắc
-                                kỳ tử đều không sống quá năm năm: làm kỹ sư nông nghiệp bị ngộ độc thực phẩm chết; làm kỹ sư quân khí nhà máy bị nổ chết; xuyên qua Lộc Đỉnh Ký làm thuộc hạ Đa Long cũng bị Vi Tiểu Bảo hố chết, thậm chí trở về làm con của
-                                Hưng Đạo vương cũng hi sinh luôn trong kháng chiến chống Nguyên rồi...thật mẹ nó ta phải chết đến mấy lần nữa đây?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End article -->
+        </footer>
+
+        <!-- Buy me a coffe script
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vbattalshn" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18"
+            data-y_margin="18"></script> -->
     </div>
-    <!-- End main -->
 
-    <!-- Footer -->
-    <div class="footer">
-
-    </div>
-    <!-- End footer -->
-
+    <script src="./publics/js/index.js"></script>
 </body>
 
 </html>

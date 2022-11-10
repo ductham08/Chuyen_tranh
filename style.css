@@ -118,10 +118,19 @@
 }
 
 .article .list_icon .item_list_icon {
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.article .list_icon .item_list_icon a {
     display: flex;
     justify-content: flex-start;
-    padding: 0px 25px;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    text-decoration: none;
     align-items: center;
+    justify-content: center
 }
 
 .article .list_icon .item_list_icon .icon i {
@@ -134,39 +143,36 @@
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat {
-    display: flex;
-    justify-content: space-between;
-    height: 370px;
+    display: flex !important;
+    justify-content: space-between !important;
     margin-bottom: 25px;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen {
-    position: relative;
-    width: 48%;
+    width: 48% !important;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    align-items: center;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content {
-    height: 220px;
-    display: flex;
-    justify-content: flex-end;
-    background-image: linear-gradient(to right bottom, #ffb2b9, #f0abc9, #d7a8d7, #b4a7df, #8aa8df);
-    position: absolute;
-    top: 25%;
-    border-radius: 5px;
-    z-index: 1;
-    padding: 10px 5px;
+    border-radius: 7px;
+    padding: 0px 15px;
+    background-color: #ececec;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta {
-    padding-top: 15px;
+    padding-top: 10px;
+    margin: 0;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta p {
     display: -webkit-box;
-    height: 16px*1.3*4;
-    font-size: 16px;
+    height: 14px*1.3*5;
+    font-size: 14px;
     line-height: 1.3;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     /* số dòng hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -174,28 +180,27 @@
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail {
-    position: absolute;
-    top: 0;
-    left: 5%;
     z-index: 2;
     text-align: center;
+    transition: 0.2s;
+    overflow: visible;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail img {
     border-radius: 7px;
 }
 
-.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail button {
+.article .truyen_thuan_viet .top_truyen_noi_bat button {
     margin-top: 5px;
     font-size: 15px;
     padding: 3px 15px;
     border-radius: 55px;
     border: 0;
-    background-color: white;
+    background-image: linear-gradient(to right bottom, #ffb2b9, #f0abc9, #d7a8d7, #b4a7df, #8aa8df);
 }
 
-.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .thumnail button a {
-    color: rgb(255, 129, 129);
+.article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen button a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -208,13 +213,16 @@
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .tac_gia {
     font-size: 15px;
     color: rgb(65, 65, 65);
+    margin: 0;
+    padding: 0;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .vote {
     color: rgb(65, 65, 65);
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
     justify-content: flex-start;
+    margin: 10px 0px;
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .vote p {
@@ -224,11 +232,10 @@
 }
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .gia_ban {
-    background-color: white;
-    padding: 5px 20px;
-    border-radius: 50px;
-    font-size: 15px;
+    /* background-color: white; */
+    font-size: 16px;
     margin: 10px 0px!important;
+    color: black;
 }
 
 
@@ -330,6 +337,14 @@ p.site-decription {
     text-decoration: underline
 }
 
+.slick-prev {
+    display: none !important;
+}
+
+.slick-next {
+    display: none !important;
+}
+
 @media screen and (max-width: 1100px) {
     .footer-nav {
         flex-direction: column
@@ -369,8 +384,195 @@ p.site-decription {
 }
 
 .swiper-slide img {
-    height: 450px !important;
+    /* height: 450px !important; */
+}
+
+.slick-track {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* End swipper */
+
+@media (max-width: 768px) {
+    .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta p {
+        display: -webkit-box;
+        height: 14px*1.3*3;
+        font-size: 14px;
+        line-height: 1.3;
+        -webkit-line-clamp: 3;
+        /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen {
+        width: 50% !important;
+    }
+    .new_comic {
+        display: none;
+    }
+}
+
+
+/* Table */
+
+.new_comic table {
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.315);
+}
+
+.new_comic table .title_new_comic {
+    font-size: 16px;
+}
+
+.new_comic table a {
+    text-decoration: none;
+    color: black;
+}
+
+.new_comic table tr {
+    border: 1px solid #ddd;
+}
+
+.new_comic table td,
+th {
+    padding: 5px 10px;
+}
+
+.new_comic table .category {
+    width: 15%;
+    text-align: left;
+}
+
+.new_comic table .name_comic a {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.new_comic table .name_comic {
+    width: 25%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.new_comic table .chapter_comic {
+    width: 30%;
+    text-align: left;
+}
+
+.new_comic table .author_comic {
+    width: 20%;
+    text-align: left;
+}
+
+.new_comic table .time_comic {
+    width: 10%;
+    text-align: center;
+}
+
+.new_comic table tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+.new_comic table tr:hover {
+    background-color: #ddd;
+}
+
+
+/* End table */
+
+
+/* Top rank */
+
+.rank_comic {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.rank_comic .item_rank_comic {
+    width: 31% !important;
+}
+
+.rank_comic .item_rank_comic h5 {
+    font-weight: 700;
+}
+
+.rank_comic .item_rank_comic table {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.26);
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 0px;
+}
+
+.rank_comic .item_rank_comic table a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.rank_comic .item_rank_comic table tr {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.rank_comic .item_rank_comic table .top_1 {
+    background-color: #dc3545;
+    width: 50px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.rank_comic .item_rank_comic table .top_2 {
+    background-color: #007bff;
+    border-radius: 15px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}
+
+.rank_comic .item_rank_comic table .top_3 {
+    background-color: #17a2b8;
+    border-radius: 15px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}
+
+.rank_comic .item_rank_comic table tr td {
+    padding: 10px 5px;
+}
+
+.rank_comic .item_rank_comic table .top_rank {
+    width: 20%;
+    text-align: center;
+}
+
+.rank_comic .item_rank_comic table .name_rank a {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rank_comic .item_rank_comic table .name_rank {
+    width: 55%;
+    text-align: left;
+}
+
+.rank_comic .item_rank_comic table .money_rank {
+    width: 25%;
+    text-align: center;
+}
+
+
+/* End top rank */

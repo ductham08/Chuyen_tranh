@@ -21,6 +21,10 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
     <!-- End link -->
 </head>
 
@@ -79,7 +83,7 @@
         <!-- Truyện thuần việt -->
         <div class="truyen_thuan_viet container">
             <div class="title_truyen_thuan_viet">
-                <h4>Truyện Thuần Việt</h4>
+                <h4>Truyện Đề Cử</h4>
                 <p>
                     <a href="#">
                         26 
@@ -88,7 +92,7 @@
                 </p>
             </div>
 
-            <div class="content_truyen_thuan_viet">
+            <div class="content_truyen_thuan_viet" id="slick-slider">
                 <div class="item_truyen_thuan_viet col-md-2 col-6">
                     <div class="thumnail_item">
                         <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221028021002.jpg" width="100%" alt=""></a>
@@ -127,6 +131,14 @@
                     </div>
                     <div class="content_item">
                         <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
                     </div>
                 </div>
                 <div class="item_truyen_thuan_viet col-md-2 col-6">
@@ -180,7 +192,7 @@
                 </p>
             </div>
 
-            <div class="content_truyen_thuan_viet">
+            <div class="content_truyen_thuan_viet" id="slick-slider">
                 <div class="item_truyen_thuan_viet col-md-2 col-6">
                     <div class="thumnail_item">
                         <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221108065511.jpg" width="100%" alt=""></a>
@@ -229,6 +241,14 @@
                         <b><a href="#">Vì Sao Lạc Lối</a></b>
                     </div>
                 </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -265,6 +285,14 @@
             </div>
 
             <div class="content_truyen_thuan_viet">
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221028021002.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Mộng Ức Quân Ly</a></b>
+                    </div>
+                </div>
                 <div class="item_truyen_thuan_viet col-md-2 col-6">
                     <div class="thumnail_item">
                         <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221028021002.jpg" width="100%" alt=""></a>
@@ -367,6 +395,14 @@
                     </div>
                     <div class="content_item">
                         <b><a href="#">Ngõ Cụt</a></b>
+                    </div>
+                </div>
+                <div class="item_truyen_thuan_viet col-md-2 col-6">
+                    <div class="thumnail_item">
+                        <a href="#"><img src="https://vieread.com/Content/AnhTruyen/Bia_Truyen_20221103065435.jpg" width="100%" alt=""></a>
+                    </div>
+                    <div class="content_item">
+                        <b><a href="#">Vì Sao Lạc Lối</a></b>
                     </div>
                 </div>
                 <div class="item_truyen_thuan_viet col-md-2 col-6">
@@ -708,12 +744,15 @@
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Css -->
     <script src="./publics/js/index.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -722,6 +761,11 @@
                 el: ".swiper-pagination",
                 dynamicBullets: true,
             },
+        });
+
+        $('.content_truyen_thuan_viet').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
         });
     </script>
 </body>

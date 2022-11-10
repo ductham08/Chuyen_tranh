@@ -149,7 +149,7 @@
     height: 220px;
     display: flex;
     justify-content: flex-end;
-    background-image: linear-gradient(to right bottom, #e7949c, #f2a18b, #f0b47f, #e2c97c, #cadf8a);
+    background-image: linear-gradient(to right bottom, #ffb2b9, #f0abc9, #d7a8d7, #b4a7df, #8aa8df);
     position: absolute;
     top: 25%;
     border-radius: 5px;
@@ -163,10 +163,10 @@
 
 .article .truyen_thuan_viet .top_truyen_noi_bat .item_truyen .content .mo_ta p {
     display: -webkit-box;
-    height: 16px*1.3*3;
+    height: 16px*1.3*4;
     font-size: 16px;
     line-height: 1.3;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     /* số dòng hiển thị */
     -webkit-box-orient: vertical;
     overflow: hidden;

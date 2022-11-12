@@ -141,22 +141,48 @@
         height: 250px;
     }
     
+    .article .list_book .top_desktop {
+        display: block;
+    }
+    
+    .article .list_book .top_mobile {
+        display: none;
+    }
+    
     .article .list_book .top_book .item_top_book {
-        width: 48% !important;
         position: relative;
+        padding: 0px 5px;
     }
     
     .article .list_book .top_book .item_top_book .thumnail {
         position: absolute;
-        top: 0;
+        bottom: 2%;
         left: 5%;
         height: 250px;
-        z-index: 2;
+        z-index: 3;
+        transition: 0.3;
+    }
+    
+    .article .list_book .top_book .item_top_book .thumnail .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 250px;
+        z-index: -2;
     }
     
     .article .list_book .top_book .item_top_book .thumnail img {
-        border-radius: 5px;
         height: 250px;
+        transition: .3s;
+        transition-property: initial;
+    }
+    
+    .article .list_book .top_book .item_top_book .thumnail:hover a img {
+        /*  */
+        transform: rotateY(-25deg);
+        transform-origin: 0 0;
+        transition: transform .3s ease;
     }
     
     .article .list_book .top_book .item_top_book .content {
@@ -165,9 +191,11 @@
         background: linear-gradient(90deg, #d66767 0%, rgba(241, 168, 203, .96875) 62.7%, rgba(222, 127, 237, .96875) 95.54%);
         top: 20%;
         background-color: #ddd;
-        right: 0;
+        right: 5px;
+        left: 5px;
         height: 200px;
         display: flex;
+        padding: 10px 0px;
         justify-content: flex-end;
         border-radius: 5px;
     }
@@ -177,6 +205,13 @@
         margin: 0;
         text-decoration: none;
         color: black;
+        display: -webkit-box;
+        font-size: 15px;
+        -webkit-line-clamp: 1;
+        /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .article .list_book .top_book .item_top_book .content .tac_gia {
@@ -533,5 +568,29 @@
             justify-content: space-around;
             flex-wrap: wrap;
             flex-direction: column;
+        }
+        .new_book {
+            display: none;
+        }
+        .article .list_book .top_desktop {
+            display: none;
+        }
+        .article .list_book .top_mobile {
+            display: block;
+        }
+        .article .list_book .top_book .item_top_book .content .mo_ta {
+            display: -webkit-box;
+            font-size: 14px;
+            -webkit-line-clamp: 2;
+            /* số dòng hiển thị */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .article .list_book .top_mobile .item_top_book .thumnail {
+            height: 220px;
+        }
+        .article .list_book .top_mobile .item_top_book .thumnail img {
+            height: 220px;
         }
     }

@@ -167,10 +167,10 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 1%;
         right: -2%;
         height: 250px;
-        z-index: -2;
+        z-index: -5;
     }
     
     .article .list_book .top_book .item_top_book .thumnail img {
@@ -545,6 +545,9 @@
     /* Mobile */
     
     @media (max-width: 768px) {
+        .dropdown-menu {
+            background-color: transparent;
+        }
         .article .list_book .content_list_book .item_list_book .thumnail_item {
             height: 150px;
         }
@@ -590,9 +593,9 @@
             text-overflow: ellipsis;
         }
         .article .list_book .top_mobile .item_top_book .thumnail {
-            height: 220px;
+            height: 230px;
         }
         .article .list_book .top_mobile .item_top_book .thumnail img {
-            height: 220px;
+            height: 230px;
         }
     }

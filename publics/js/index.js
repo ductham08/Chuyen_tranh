@@ -9,8 +9,9 @@ const theme_setting = {
     color_main: "",
     color_text: "",
     font_text: "",
-    font_size: 16,
-    width_text: 980,
+    font_size: "",
+    width_text: "",
+    line_height: ""
 }
 
 const get_theme = JSON.parse(localStorage.getItem('setting_theme'))
@@ -18,11 +19,18 @@ console.log(get_theme)
 
 
 if (get_theme) {
+    // color main
     box_main.style = `background-color: #${get_theme.color_main}`;
-    content_read_book.style = `color: #${get_theme.color_text}`
-    content_read_book.style = `font-family: '${get_theme.font_text}`
-    content_read_book.style = `font-family: '${get_theme.font_text}`
-    content_read_book.style = `width: ${get_theme.width}px;`
+    // color text
+    content_read_book.style = `color: #${get_theme.color_text}`;
+    // font family
+    content_read_book.style = `font-family: '${get_theme.font_text}`;
+    // font size
+    content_read_book.style = `font-size: ${get_theme.font_size}px;`;
+    // width content
+    content_read_book.style = `width: ${get_theme.width_text}px;`;
+    // line height
+    content_read_book.style = `line-height: ${get_theme.line_height}%`;
 }
 
 
@@ -55,39 +63,32 @@ btn_setting.addEventListener("click", () => {
     })
 
     // Size text
-    const btn_apart_text_size = document.querySelector(".btn_apart_text_size")
-    const btn_add_text_size = document.querySelector(".btn_add_text_size")
     const value_text_size = document.querySelector(".value_text_size")
 
-    btn_apart_text_size.addEventListener("click", () => {
-        const font_size = 14;
-
-    })
-    btn_add_text_size.addEventListener("click", () => {
-        content_read_book.style = `font-size: 18px`
+    value_text_size.addEventListener("change", () => {
+        content_read_book.style = `font-size: ${value_text_size.value}px`
+        theme_setting.font_size = value_text_size.value
+        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
     })
 
     // Width content
-    const btn_apart_width = document.querySelector(".btn_apart_width")
-    const btn_add_width = document.querySelector(".btn_add_width")
+    const value_with_size = document.querySelector(".value_with_size")
 
-    btn_apart_width.addEventListener("click", () => {
-        content_read_book.style = `width: 800px;margin: auto`
-    })
-    btn_add_width.addEventListener("click", () => {
-        content_read_book.style = `width: 1000px;margin: auto`
+    value_with_size.addEventListener("change", () => {
+        content_read_book.style = `width: ${value_with_size.value}px;`
+        theme_setting.width_text = value_with_size.value
+        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
     })
 
     // Line-height text
-    const btn_apart_padding = document.querySelector(".btn_apart_padding")
-    const btn_add_padding = document.querySelector(".btn_add_padding")
+    const value_line_hight = document.querySelector(".value_line_hight")
 
-    btn_apart_padding.addEventListener("click", () => {
-        content_read_book.style = `line-height: 100%`
+    value_line_hight.addEventListener("change", () => {
+        content_read_book.style = `line-height: ${value_line_hight.value}%;`
+        theme_setting.line_height = value_line_hight.value
+        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
     })
-    btn_add_padding.addEventListener("click", () => {
-        content_read_book.style = `line-height: 150%`
-    })
+
 
     // Font text
     const font_text = document.querySelector(".font")

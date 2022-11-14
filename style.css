@@ -205,6 +205,10 @@
         margin: auto;
     }
     
+    .article .content_read_book {
+        margin: auto;
+    }
+    
     .article .read_book .title_chapter p {
         margin: 0;
         padding: 0;
@@ -377,7 +381,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        border: 1px solid gainsboro;
         border-radius: 5px;
     }
     
@@ -468,3 +471,12 @@
         text-overflow: ellipsis;
     }
     /* End article */
+    
+    .article .read_book .setting .box_setting table tr td input {
+        outline-style: none;
+        padding: 3px 0px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 1px solid gainsboro;
+        width: 100%;
+    }

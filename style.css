@@ -251,6 +251,7 @@
         background-color: #ffffff;
         display: none;
         position: absolute;
+        color: black !important;
     }
     
     .article .read_book .setting .box_setting .title_box_setting {
@@ -487,4 +488,14 @@
     
     .main_box_setting .btn_color_main {
         cursor: pointer;
+    }
+    
+    .main_box_setting ul li:has(input:checked) .btn_color_main {
+        /* border: 1px solid rgb(255, 0, 0) !important; */
+        box-shadow: 0px 0px 5px red;
+    }
+    
+    .main_box_setting ul li:has(input:checked) .btn_color_main::before {
+        box-sizing: border-box !important;
+        color: gray;
     }

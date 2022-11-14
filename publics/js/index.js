@@ -62,17 +62,17 @@ function loadTheme(data) {
 
         // font size
         if (data.value_text_size) {
-            $('.content_read_book').css('font-size', data.value_text_size);
+            $('.content_read_book').css('font-size', data.value_text_size + "px");
         }
 
         // width content
         if (data.value_with_size) {
-            $('.content_read_book').css('background-color', data.value_with_size);
+            $('.content_read_book').css('width', data.value_with_size + "px");
         }
 
         // line height
         if (data.value_line_hight) {
-            $('.content_read_book').css('background-color', data.value_line_hight);
+            $('.content_read_book').css('line-height', data.value_line_hight + "%");
         }
 
     }

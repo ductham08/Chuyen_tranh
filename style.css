@@ -2,16 +2,28 @@
         margin: 0;
         padding: 0;
     }
+    /* Font */
     
     @font-face {
-        font-family: italic;
-        src: url(./publics/fonts/Roboto_Serif/static/RobotoSerif/RobotoSerif-Bold.ttf);
+        font-family: roboto;
+        src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
     }
     
     @font-face {
-        font-family: variable;
-        src: url(./publics/fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+        font-family: sono;
+        src: url(https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap);
     }
+    
+    @font-face {
+        font-family: montserrat;
+        src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+    }
+    
+    @font-face {
+        font-family: robotoMono;
+        src: url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
+    }
+    /* End font */
     /* Header */
     
     .header {
@@ -493,6 +505,11 @@
     .main_box_setting ul li:has(input:checked) .btn_color_main {
         /* border: 1px solid rgb(255, 0, 0) !important; */
         box-shadow: 0px 0px 5px red;
+    }
+    
+    .main_box_setting ul li:has(input:checked) .btn_color_main::before {
+        box-sizing: border-box !important;
+        color: gray;
     }
     
     .main_box_setting ul li:has(input:checked) .btn_color_main::before {

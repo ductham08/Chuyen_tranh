@@ -28,6 +28,8 @@ $('.event_change_value').on('change', (e) => {
     let valueLocalStorage = localStorage.getItem('setting_theme');
     let value = $(`[name=${nameInp}]:checked`).val();
 
+    console.log(nameInp);
+
     if (!value) {
         value = $(`[name=${nameInp}]`).val();
     }
@@ -37,13 +39,14 @@ $('.event_change_value').on('change', (e) => {
     }
 
     data[nameInp] = value;
+
+
     localStorage.setItem('setting_theme', JSON.stringify(data))
     loadTheme(data);
 });
 
 
 function loadTheme(data) {
-    console.log(data);
     if (data) {
         // color main
         if (data.bg_color) {
@@ -52,27 +55,32 @@ function loadTheme(data) {
 
         // color text
         if (data.text_color) {
+            console.log(data.text_color)
             $('.read_book').css('color', data.text_color);
         }
 
         // font family
         if (data.font) {
             $('.content_read_book').css('font-family', data.font);
+            $(`.font option[value=${data.font}]`).attr('selected', 'selected');
         }
 
         // font size
         if (data.value_text_size) {
             $('.content_read_book').css('font-size', data.value_text_size + "px");
+            $(".value_text_size").val(data.value_text_size);
         }
 
         // width content
         if (data.value_with_size) {
             $('.content_read_book').css('width', data.value_with_size + "px");
+            $(".value_with_size").val(`${data.value_with_size}`);
         }
 
         // line height
         if (data.value_line_hight) {
             $('.content_read_book').css('line-height', data.value_line_hight + "%");
+            $(".value_line_hight").val(data.value_line_hight);
         }
 
     }

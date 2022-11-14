@@ -275,14 +275,14 @@
         margin: auto;
     }
     
-    .article .read_book .setting .box_setting button {
+    .article .read_book .setting .box_setting label {
         width: 30px;
         height: 30px;
         border-radius: 100%;
         text-align: center;
     }
     
-    .article .read_book .setting .box_setting button i {
+    .article .read_book .setting .box_setting label i {
         font-size: 10px;
     }
     
@@ -479,4 +479,12 @@
         background-color: transparent;
         border: 1px solid gainsboro;
         width: 100%;
+    }
+    
+    .inp_radio {
+        display: none;
+    }
+    
+    .main_box_setting .btn_color_main {
+        cursor: pointer;
     }

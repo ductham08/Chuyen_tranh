@@ -1,105 +1,16 @@
-const box_main = document.querySelector(".main")
-const content_read_book = document.querySelector(".content_read_book")
-
-
 const btn_setting = document.querySelector(".btn_setting")
 const box_setting = document.querySelector(".box_setting")
 
-const theme_setting = {
-    color_main: "",
-    color_text: "",
-    font_text: "",
-    font_size: "",
-    width_text: "",
-    line_height: ""
+try {
+    let initTheme = JSON.parse(localStorage.getItem('setting_theme'));
+    loadTheme(initTheme);
+} catch (error) {
+    console.log(error);
 }
-
-const get_theme = JSON.parse(localStorage.getItem('setting_theme'))
-console.log(get_theme)
-
-
-if (get_theme) {
-    // color main
-    box_main.style = `background-color: #${get_theme.color_main}`;
-    // color text
-    content_read_book.style = `color: #${get_theme.color_text}`;
-    // font family
-    content_read_book.style = `font-family: '${get_theme.font_text}`;
-    // font size
-    content_read_book.style = `font-size: ${get_theme.font_size}px;`;
-    // width content
-    content_read_book.style = `width: ${get_theme.width_text}px;`;
-    // line height
-    content_read_book.style = `line-height: ${get_theme.line_height}%`;
-}
-
-
-
-
 
 btn_setting.addEventListener("click", () => {
     box_setting.style = 'display: block'
     const btn_hidden = document.querySelector(".btn_hidden")
-
-    const btn_color_main = document.querySelectorAll(".btn_color_main")
-    const btn_color_text = document.querySelectorAll(".btn_color_text")
-
-    // color main
-    btn_color_main.forEach(item => {
-        item.addEventListener("click", () => {
-            box_main.style = `background-color: #${item.value}`
-            theme_setting.color_main = item.value
-            localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-        })
-    })
-
-    // color text
-    btn_color_text.forEach(item => {
-        item.addEventListener("click", () => {
-            content_read_book.style = `color: #${item.value}`
-            theme_setting.color_text = item.value
-            localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-        })
-    })
-
-    // Size text
-    const value_text_size = document.querySelector(".value_text_size")
-
-    value_text_size.addEventListener("change", () => {
-        content_read_book.style = `font-size: ${value_text_size.value}px`
-        theme_setting.font_size = value_text_size.value
-        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-    })
-
-    // Width content
-    const value_with_size = document.querySelector(".value_with_size")
-
-    value_with_size.addEventListener("change", () => {
-        content_read_book.style = `width: ${value_with_size.value}px;`
-        theme_setting.width_text = value_with_size.value
-        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-    })
-
-    // Line-height text
-    const value_line_hight = document.querySelector(".value_line_hight")
-
-    value_line_hight.addEventListener("change", () => {
-        content_read_book.style = `line-height: ${value_line_hight.value}%;`
-        theme_setting.line_height = value_line_hight.value
-        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-    })
-
-
-    // Font text
-    const font_text = document.querySelector(".font")
-    font_text.addEventListener("change", () => {
-        content_read_book.style = `font-family: '${font_text.value}'`;
-        theme_setting.font_text = font_text.value
-        localStorage.setItem('setting_theme', JSON.stringify(theme_setting))
-    })
-
-
-
 
 
     // hidden box
@@ -108,3 +19,62 @@ btn_setting.addEventListener("click", () => {
     })
 
 })
+
+
+$('.event_change_value').on('change', (e) => {
+
+    let data = {};
+    let nameInp = e.target.getAttribute('name');
+    let valueLocalStorage = localStorage.getItem('setting_theme');
+    let value = $(`[name=${nameInp}]:checked`).val();
+
+    if (!value) {
+        value = $(`[name=${nameInp}]`).val();
+    }
+
+    if (valueLocalStorage) {
+        data = JSON.parse(valueLocalStorage)
+    }
+
+    data[nameInp] = value;
+    localStorage.setItem('setting_theme', JSON.stringify(data))
+    loadTheme(data);
+});
+
+
+function loadTheme(data) {
+    console.log(data);
+    if (data) {
+        // color main
+        if (data.bg_color) {
+            $('.read_book').css('background-color', data.bg_color);
+        }
+
+        // color text
+        if (data.text_color) {
+            $('.read_book').css('color', data.text_color);
+        }
+
+        // font family
+        if (data.font) {
+            $('.content_read_book').css('font-family', data.font);
+        }
+
+        // font size
+        if (data.value_text_size) {
+            $('.content_read_book').css('font-size', data.value_text_size);
+        }
+
+        // width content
+        if (data.value_with_size) {
+            $('.content_read_book').css('background-color', data.value_with_size);
+        }
+
+        // line height
+        if (data.value_line_hight) {
+            $('.content_read_book').css('background-color', data.value_line_hight);
+        }
+
+    }
+
+}
